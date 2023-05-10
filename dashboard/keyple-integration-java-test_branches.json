@@ -1,10 +1,4 @@
-[
-  {
-    "name": "main",
-    "commit": {
-      "sha": "ea4d0b5831e7e0ca1b8ea6ecdaf77b5e16874b7f",
-      "url": "https://api.github.com/repos/eclipse/keyple-integration-java-test/commits/ea4d0b5831e7e0ca1b8ea6ecdaf77b5e16874b7f"
-    },
-    "protected": false
-  }
-]
+{
+  "message": "API rate limit exceeded for installation ID 10009409.",
+  "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+}
