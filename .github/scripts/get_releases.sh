@@ -10,7 +10,7 @@ jq -c '.[] | tojson' | while read -r i; do
   filename="$published_at.md"
 
   # Write the Markdown file contents
-  echo "{{% release-row \"$(echo $published_at | cut -c 1-10)\" \"$1\" \"$tag_name\" %}} " > "$filename"
-  echo $body >> "$filename"
+  echo "{{% release-row \"$(echo "$published_at" | cut -c 1-10)\" \"$1\" \"$tag_name\" %}} " > "$filename"
+  echo -e "$body" >> "$filename"
   echo "{{% /release-row %}}" >> "$filename"
 done
