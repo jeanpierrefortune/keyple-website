@@ -22,7 +22,7 @@ jobs:
       - name: Update project releases data
         id: update
         working-directory: .
-        run: ./.github/scripts/releases_update.sh
+        run: ./.github/scripts/releases_update.sh ${{ github.repository_owner }} ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
       - name: Update gh-pages
