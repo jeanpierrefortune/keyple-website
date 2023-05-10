@@ -1,18 +1,32 @@
 #!/bin/bash
+
 mkdir releases/
 cd releases || exit
 
-# Download and process JSON data 
-curl -s -S -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/eclipse/$1/releases?per_page=1000&page=1" | \
-jq -c '.[] | tojson' | while read -r i; do
-  i=$(echo "$i" | jq -r '.')
-  tag_name=$(echo "$i" | jq -r '.tag_name')
-  published_at=$(echo "$i" | jq -r '.published_at')
-  body=$(echo "$i" | jq -r '.body' | sed 's/\\r\\n/\n/g')
-  filename="$published_at.md"
+# Check if the repos.list file exists
+if [ ! -f ./.github/scripts/repos.list ]; then
+  echo "The repos.list file cannot be found."
+  exit 1
+fi
 
-  # Write the Markdown file contents
-  echo "{{% release-row \"$(echo $published_at | cut -c 1-10)\" \"$1\" \"$tag_name\" %}} " > "$filename"
-  echo $body >> "$filename"
-  echo "{{% /release-row %}}" >> "$filename"
+# Remove all .md files in the current directory
+echo "Removing existing .md files..."
+rm -f ./*.md
+
+# Loop through each line in the repos.list file
+while read -r repo; do
+  if [ ! -z "$repo" ]; then
+    echo "Processing repository: $repo"
+    ./get_releases.sh "$repo"
+  fi
+done < repos.list
+
+# Concatenate all .md files into a new releases.md file, sorted in reverse alphabetical order by their namess
+echo "Concatenating .md files into releases.md..."
+touch releases.md
+for md_file in $(ls ./*.md | sort -r); do
+  cat "$md_file" >> releases.md
+  echo -e "\n---\n" >> releases.md
 done
+
+echo "All .md files have been concatenated into releases.md."
