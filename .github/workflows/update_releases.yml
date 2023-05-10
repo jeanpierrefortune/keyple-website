@@ -16,8 +16,10 @@ jobs:
         working-directory: .
         run: chmod +x ./.github/scripts/*.sh
 
-      - name: Update project releases data
+      - name: Set up jq
         uses: sergeysova/jq-action@v2
+
+      - name: Update project releases data
         id: update
         working-directory: .
         run: ./.github/scripts/generate_all.sh
