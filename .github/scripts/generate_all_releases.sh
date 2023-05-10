@@ -17,7 +17,7 @@ rm -f ./*.md
 while read -r repo; do
   if [ ! -z "$repo" ]; then
     echo "Processing repository: $repo"
-    ./get_releases.sh "$repo"
+    ../../.github/scripts/get_releases.sh "$repo"
   fi
 done < ../../.github/scripts/repos.list
 
