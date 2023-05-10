@@ -22,7 +22,7 @@ jobs:
       - name: Update project releases data
         id: update
         working-directory: .
-        run: ./.github/scripts/generate_all.sh
+        run: ./.github/scripts/releases_update.sh
         continue-on-error: true
 
       - name: Update gh-pages
