@@ -1,4 +1,18 @@
-{
-  "message": "API rate limit exceeded for installation ID 10009409.",
-  "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
-}
+[
+  {
+    "name": "gh-pages",
+    "commit": {
+      "sha": "592d7b595855ca8def45ddc7bf58374ee2cdbb0d",
+      "url": "https://api.github.com/repos/eclipse/keyple-card-calypso-java-lib/commits/592d7b595855ca8def45ddc7bf58374ee2cdbb0d"
+    },
+    "protected": false
+  },
+  {
+    "name": "main",
+    "commit": {
+      "sha": "ed793cdd33bac1cc9ab200731ee4077553290542",
+      "url": "https://api.github.com/repos/eclipse/keyple-card-calypso-java-lib/commits/ed793cdd33bac1cc9ab200731ee4077553290542"
+    },
+    "protected": false
+  }
+]
