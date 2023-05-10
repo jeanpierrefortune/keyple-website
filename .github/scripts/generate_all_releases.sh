@@ -19,7 +19,7 @@ while read -r repo; do
     echo "Processing repository: $repo"
     ./get_releases.sh "$repo"
   fi
-done < repos.list
+done < ../../.github/scripts/repos.list
 
 # Concatenate all .md files into a new releases.md file, sorted in reverse alphabetical order by their namess
 echo "Concatenating .md files into releases.md..."
