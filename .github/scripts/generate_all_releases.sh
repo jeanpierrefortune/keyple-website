@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir releases/
+cd releases || exit
 
 # Download and process JSON data 
 curl -s -S -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/eclipse/$1/releases?per_page=1000&page=1" | \
