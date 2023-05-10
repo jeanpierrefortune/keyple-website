@@ -4,7 +4,7 @@ mkdir releases/
 cd releases || exit
 
 # Check if the repos.list file exists
-if [ ! -f ./.github/scripts/repos.list ]; then
+if [ ! -f ../../.github/scripts/repos.list ]; then
   echo "The repos.list file cannot be found."
   exit 1
 fi
