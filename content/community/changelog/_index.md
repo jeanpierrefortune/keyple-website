@@ -1,23 +1,20 @@
 ---
 title: Eclipse Keyple® project changelog
 linktitle: Changelog
-summary: Changes history.
+summary: Evolutions of the Keyple components after the version 2.0.0 of the SDK.
 type: book
-toc: true
+toc: false
 weight: 3
 ---
 
----
-## Changelog
-
-<table>
-<thead>
-  <tr>
-    <th>Date</th>
-    <th>Component</th>
-  </tr>
-</thead>
+<table id="changelog-table" class="table table-striped">
+   <thead>
+      <tr>
+         <th>Date</th>
+         <th>Component</th>
+      </tr>
+   </thead>
    <tbody>
-TO_BE_REPLACED
+<!-- CHANGELOG_CONTENT -->
    </tbody>
 </table>
