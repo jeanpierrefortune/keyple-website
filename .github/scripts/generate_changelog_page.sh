@@ -25,4 +25,4 @@ for md_file in $(ls ./*.md | sort -r); do
   cat "$md_file" >> changelog
 done
 
-sed -i 's/TO_BE_REPLACED/'"$(cat ./changelog)"'/' content/community/changelog/_index.md
+awk -v replacement="$(cat ./changelog)" '{gsub("TO_BE_REPLACED", replacement)}1' content/community/changelog/_index.md > temp.md && mv temp.md content/community/changelog/_index.md
