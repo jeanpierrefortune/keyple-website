@@ -7,14 +7,14 @@
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
 <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" media=print onload="this.media='all'">
-<meta name=description content="Changes history.">
+<meta name=description content="Evolutions of the Keyple components after the version 2.0.0 of the SDK.">
 <link rel=alternate hreflang=en-us href=https://jeanpierrefortune.github.io/keyple-website/community/changelog/>
 <meta name=theme-color content="#1D87BB">
 <link rel=stylesheet href=../../css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous media=print onload="this.media='all'">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/darcula.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/darcula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
-<link rel=stylesheet href=../../css/wowchemy.f59b11c298a8f17a7ac1cc9667b998a2.css>
+<link rel=stylesheet href=../../css/wowchemy.f4e3a850215abb50d0f86a9ff9a47e0a.css>
 <script>(function(b,d,e,a,g){b[a]=b[a]||[],b[a].push({'gtm.start':(new Date).getTime(),event:'gtm.js'});var f=d.getElementsByTagName(e)[0],c=d.createElement(e),h=a!='dataLayer'?'&l='+a:'';c.async=!0,c.src='https://www.googletagmanager.com/gtm.js?id='+g+h,f.parentNode.insertBefore(c,f)})(window,document,'script','dataLayer','GTM-5WLCZXC')</script>
 <link rel=alternate href=../../community/changelog/index.xml type=application/rss+xml title="Eclipse Keyple">
 <link rel=manifest href=../../manifest.webmanifest>
@@ -25,7 +25,7 @@
 <meta property="og:site_name" content="Eclipse Keyple">
 <meta property="og:url" content="https://jeanpierrefortune.github.io/keyple-website/community/changelog/">
 <meta property="og:title" content="Eclipse Keyple® project changelog | Eclipse Keyple">
-<meta property="og:description" content="Changes history."><meta property="og:image" content="https://jeanpierrefortune.github.io/keyple-website/media/logo.svg">
+<meta property="og:description" content="Evolutions of the Keyple components after the version 2.0.0 of the SDK."><meta property="og:image" content="https://jeanpierrefortune.github.io/keyple-website/media/logo.svg">
 <meta property="twitter:image" content="https://jeanpierrefortune.github.io/keyple-website/media/logo.svg"><meta property="og:locale" content="en-us">
 <title>Eclipse Keyple® project changelog | Eclipse Keyple</title>
 </head>
@@ -100,6 +100,7 @@
 <div class=dropdown-menu>
 <a class=dropdown-item href=../../community/contributing/><span>Contributing</span></a>
 <a class=dropdown-item href=../../community/roadmap/><span>Roadmap</span></a>
+<a class=dropdown-item href=../../community/changelog/><span>Changelog</span></a>
 <a class=dropdown-item href=../../project-dashboard/><span>Project dashboard</span></a>
 <a class=dropdown-item href="https://sonarcloud.io/organizations/eclipse/projects?search=keyple&sort=-analysis_date"><span>Code quality dashboard</span></a>
 <a class=dropdown-item href=https://projects.eclipse.org/projects/iot.keyple/><span>Eclipse Foundation Keyple page</span></a>
@@ -159,131 +160,12 @@
 </ul>
 </nav>
 </div>
-<div class="d-none d-xl-block col-xl-2 docs-toc">
-<ul class="nav toc-top">
-<li><a href=# id=back_to_top class=docs-toc-title>Contents</a></li>
-</ul>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#changelog>Changelog</a>
-<ul>
-<li><a href=#fixed>Fixed</a></li>
-<li><a href=#upgraded>Upgraded</a></li>
-<li><a href=#fixed-1>Fixed</a></li>
-<li><a href=#fixed-2>Fixed</a></li>
-<li><a href=#fixed-3>Fixed</a></li>
-<li><a href=#upgraded-1>Upgraded</a></li>
-<li><a href=#fixed-4>Fixed</a></li>
-<li><a href=#added>Added</a></li>
-<li><a href=#changed>Changed</a></li>
-<li><a href=#upgraded-2>Upgraded</a></li>
-<li><a href=#added-1>Added</a></li>
-<li><a href=#upgraded-3>Upgraded</a></li>
-<li><a href=#added-2>Added</a></li>
-<li><a href=#fixed-5>Fixed</a></li>
-<li><a href=#changed-1>Changed</a></li>
-<li><a href=#fixed-6>Fixed</a></li>
-<li><a href=#added-3>Added</a></li>
-<li><a href=#changed-2>Changed</a></li>
-<li><a href=#upgraded-4>Upgraded</a></li>
-<li><a href=#changed-3>Changed</a></li>
-<li><a href=#upgraded-5>Upgraded</a></li>
-<li><a href=#changed-4>Changed</a></li>
-<li><a href=#upgraded-6>Upgraded</a></li>
-<li><a href=#changed-5>Changed</a></li>
-<li><a href=#added-4>Added</a></li>
-<li><a href=#changed-6>Changed</a></li>
-<li><a href=#upgraded-7>Upgraded</a></li>
-<li><a href=#fixed-7>Fixed</a></li>
-<li><a href=#upgraded-8>Upgraded</a></li>
-<li><a href=#upgraded-9>Upgraded</a></li>
-<li><a href=#added-5>Added</a></li>
-<li><a href=#upgraded-10>Upgraded</a></li>
-<li><a href=#fixed-8>Fixed</a></li>
-<li><a href=#upgraded-11>Upgraded</a></li>
-<li><a href=#changed-7>Changed</a></li>
-<li><a href=#upgraded-12>Upgraded</a></li>
-<li><a href=#added-6>Added</a></li>
-<li><a href=#upgraded-13>Upgraded</a></li>
-<li><a href=#fixed-9>Fixed</a></li>
-<li><a href=#deprecated>Deprecated</a></li>
-<li><a href=#upgraded-14>Upgraded</a></li>
-<li><a href=#added-7>Added</a></li>
-<li><a href=#added-8>Added</a></li>
-<li><a href=#fixed-10>Fixed</a></li>
-<li><a href=#fixed-11>Fixed</a></li>
-<li><a href=#fixed-12>Fixed</a></li>
-<li><a href=#changed-8>Changed</a></li>
-<li><a href=#upgraded-15>Upgraded</a></li>
-<li><a href=#added-9>Added</a></li>
-<li><a href=#added-10>Added</a></li>
-<li><a href=#changed-9>Changed</a></li>
-<li><a href=#fixed-13>Fixed</a></li>
-<li><a href=#upgraded-16>Upgraded</a></li>
-<li><a href=#fixed-14>Fixed</a></li>
-<li><a href=#upgraded-17>Upgraded</a></li>
-<li><a href=#changed-10>Changed</a></li>
-<li><a href=#upgraded-18>Upgraded</a></li>
-<li><a href=#added-11>Added</a></li>
-<li><a href=#fixed-15>Fixed</a></li>
-<li><a href=#upgraded-19>Upgraded</a></li>
-<li><a href=#changed-11>Changed</a></li>
-<li><a href=#upgraded-20>Upgraded</a></li>
-<li><a href=#added-12>Added</a></li>
-<li><a href=#deprecated-1>Deprecated</a></li>
-<li><a href=#fixed-16>Fixed</a></li>
-<li><a href=#upgraded-21>Upgraded</a></li>
-<li><a href=#added-13>Added</a></li>
-<li><a href=#upgraded-22>Upgraded</a></li>
-<li><a href=#fixed-17>Fixed</a></li>
-<li><a href=#added-14>Added</a></li>
-<li><a href=#fixed-18>Fixed</a></li>
-<li><a href=#upgraded-23>Upgraded</a></li>
-<li><a href=#added-15>Added</a></li>
-<li><a href=#fixed-19>Fixed</a></li>
-<li><a href=#upgraded-24>Upgraded</a></li>
-<li><a href=#added-16>Added</a></li>
-<li><a href=#upgraded-25>Upgraded</a></li>
-<li><a href=#added-17>Added</a></li>
-<li><a href=#upgraded-26>Upgraded</a></li>
-<li><a href=#fixed-20>Fixed</a></li>
-<li><a href=#added-18>Added</a></li>
-<li><a href=#changed-12>Changed</a></li>
-<li><a href=#deprecated-2>Deprecated</a></li>
-<li><a href=#added-19>Added</a></li>
-<li><a href=#changed-13>Changed</a></li>
-<li><a href=#fixed-21>Fixed</a></li>
-<li><a href=#upgraded-27>Upgraded</a></li>
-<li><a href=#fixed-22>Fixed</a></li>
-<li><a href=#upgraded-28>Upgraded</a></li>
-<li><a href=#fixed-23>Fixed</a></li>
-<li><a href=#upgraded-29>Upgraded</a></li>
-<li><a href=#added-20>Added</a></li>
-<li><a href=#fixed-24>Fixed</a></li>
-<li><a href=#added-21>Added</a></li>
-<li><a href=#fixed-25>Fixed</a></li>
-<li><a href=#upgraded-30>Upgraded</a></li>
-<li><a href=#added-22>Added</a></li>
-<li><a href=#changed-14>Changed</a></li>
-<li><a href=#fixed-26>Fixed</a></li>
-<li><a href=#upgraded-31>Upgraded</a></li>
-<li><a href=#deprecated-3>Deprecated</a></li>
-<li><a href=#added-23>Added</a></li>
-<li><a href=#changed-15>Changed</a></li>
-<li><a href=#fixed-27>Fixed</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
 <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role=main>
 <article class=article>
 <div class=docs-article-container>
 <h1>Eclipse Keyple® project changelog</h1>
 <div class=article-style>
-<hr>
-<h2 id=changelog>Changelog</h2>
-<table>
+<table id=changelog-table class="table table-striped">
 <thead>
 <tr>
 <th>Date</th>
@@ -292,9 +174,12 @@
 </thead>
 <tbody>
 <tr>
-<td>2023-05-10</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.5<br>
+2023-05-10
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.3.5</code></span>
+<hr>
 <h3 id=fixed>Fixed</h3>
 <ul>
 <li>An issue with &ldquo;Select File&rdquo; and &ldquo;Read Record&rdquo; commands when the card is a legacy ASK Tango card having the following startup information value:
@@ -312,9 +197,12 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.5<br>
 </ul>
 </tr>
 <tr>
-<td>2023-05-05</td>
 <td>
-Keyple Distributed Remote Java Lib&nbsp;&nbsp;2.2.1<br>
+2023-05-05
+</td>
+<td>
+Keyple Distributed Remote Java Lib<span class=version><code>2.2.1</code></span>
+<hr>
 <h3 id=fixed-1>Fixed</h3>
 <ul>
 <li>
@@ -325,9 +213,12 @@ that appeared with version <code>2.2.0</code>.</p>
 </ul>
 </tr>
 <tr>
-<td>2023-05-05</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.2.1<br>
+2023-05-05
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.2.1</code></span>
+<hr>
 <h3 id=fixed-2>Fixed</h3>
 <ul>
 <li>
@@ -337,30 +228,12 @@ Keyple Service Java Lib&nbsp;&nbsp;2.2.1<br>
 </ul>
 </tr>
 <tr>
-<td>2023-05-05</td>
 <td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.3.0.4<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-05-05</td>
+2023-04-27
+</td>
 <td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.2.5.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-05-05</td>
-<td>
-Keyple Plugin Pcsc Cpp Lib&nbsp;&nbsp;2.1.0.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-27</td>
-<td>
-Keyple Plugin Cardresource Java Lib&nbsp;&nbsp;1.0.1<br>
+Keyple Plugin Cardresource Java Lib<span class=version><code>1.0.1</code></span>
+<hr>
 <h3 id=fixed-3>Fixed</h3>
 <ul>
 <li>Exception handling associated with the reader allocation process.</li>
@@ -374,9 +247,12 @@ Keyple Plugin Cardresource Java Lib&nbsp;&nbsp;1.0.1<br>
 </ul>
 </tr>
 <tr>
-<td>2023-04-27</td>
 <td>
-Keyple Service Resource Java Lib&nbsp;&nbsp;2.1.1<br>
+2023-04-27
+</td>
+<td>
+Keyple Service Resource Java Lib<span class=version><code>2.1.1</code></span>
+<hr>
 <h3 id=fixed-4>Fixed</h3>
 <ul>
 <li>
@@ -386,17 +262,23 @@ Keyple Service Resource Java Lib&nbsp;&nbsp;2.1.1<br>
 </ul>
 </tr>
 <tr>
-<td>2023-04-25</td>
 <td>
-Keyple Plugin Cardresource Java Lib&nbsp;&nbsp;1.0.0<br>
+2023-04-25
+</td>
+<td>
+Keyple Plugin Cardresource Java Lib<span class=version><code>1.0.0</code></span>
+<hr>
 <p>This is the initial release.</p>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2023-04-25</td>
 <td>
-Keyple Service Resource Java Lib&nbsp;&nbsp;2.1.0<br>
+2023-04-25
+</td>
+<td>
+Keyple Service Resource Java Lib<span class=version><code>2.1.0</code></span>
+<hr>
 <h3 id=added>Added</h3>
 <ul>
 <li>The method <code>CardResource.getReaderExtension</code> to access the reader extension.</li>
@@ -423,9 +305,12 @@ Keyple Service Resource Java Lib&nbsp;&nbsp;2.1.0<br>
 </ul>
 </tr>
 <tr>
-<td>2023-04-25</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.2.0<br>
+2023-04-25
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.2.0</code></span>
+<hr>
 <p>⚠️ <strong>CAUTION</strong>: In the case of a distributed mode, it is required to use at least this version on the client and server side.</p>
 <h3 id=added-1>Added</h3>
 <ul>
@@ -440,9 +325,12 @@ Keyple Service Java Lib&nbsp;&nbsp;2.2.0<br>
 </ul>
 </tr>
 <tr>
-<td>2023-04-25</td>
 <td>
-Keyple Plugin Java Api&nbsp;&nbsp;2.1.0<br>
+2023-04-25
+</td>
+<td>
+Keyple Plugin Java Api<span class=version><code>2.1.0</code></span>
+<hr>
 <h3 id=added-2>Added</h3>
 <ul>
 <li>
@@ -459,97 +347,12 @@ order to retrieve the smart card that may be automatically selected.</p>
 </ul>
 </tr>
 <tr>
-<td>2023-04-24</td>
 <td>
-Keyple Plugin Pcsc Java Lib&nbsp;&nbsp;2.1.2<br>
-<h3 id=fixed-5>Fixed</h3>
-<ul>
-<li>
-<p>Unnecessary logging in Java 16+ during reflexive calls used to overcome the deficiencies of <code>smartcard.io</code> in Windows
-environment.</p>
+2023-04-04
 </td>
-</li>
-</ul>
-</tr>
-<tr>
-<td>2023-04-17</td>
 <td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.3.0.3<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-12</td>
-<td>
-Keyple Service Cpp Lib&nbsp;&nbsp;2.1.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-12</td>
-<td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.2.5<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-12</td>
-<td>
-Keyple Cpp Example&nbsp;&nbsp;2022-11-17<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-12</td>
-<td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.3.0.2<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-12</td>
-<td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.2.4<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-12</td>
-<td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.2.3<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-09</td>
-<td>
-Keyple Cpp Example&nbsp;&nbsp;2022-10-27<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-04-05</td>
-<td>
-Keyple Plugin Pcsc Java Lib&nbsp;&nbsp;2.1.1<br>
-<h3 id=changed-1>Changed</h3>
-<ul>
-<li><code>PcscPluginFactoryBuilder.useContactReaderIdentificationFilter</code> method marked as deprecated.</li>
-</ul>
-<h3 id=fixed-6>Fixed</h3>
-<ul>
-<li>
-<p>Use default reader type identification filters.</p>
-</li>
-<li>
-<p>Logging of the available readers names in the <code>AbstractPcscPluginAdapter</code> class.</p>
-</td>
-</li>
-</ul>
-</tr>
-<tr>
-<td>2023-04-04</td>
-<td>
-Keyple Distributed Local Java Lib&nbsp;&nbsp;2.2.0<br>
+Keyple Distributed Local Java Lib<span class=version><code>2.2.0</code></span>
+<hr>
 <p>⚠️ <strong>CAUTION</strong>: this version requires to use at least version <code>2.2.0</code> of the
 <a href=https://keyple.org/components-java/distributed/keyple-distributed-remote-java-lib/ target=_blank rel=noopener>Keyple Distributed Remote Library</a>!</p>
 <h3 id=added-3>Added</h3>
@@ -557,7 +360,7 @@ Keyple Distributed Local Java Lib&nbsp;&nbsp;2.2.0<br>
 <li><code>CHANGELOG.md</code> file (issue [eclipse/keyple#6]).</li>
 <li>CI: Forbid the publication of a version already released (issue [#5]).</li>
 </ul>
-<h3 id=changed-2>Changed</h3>
+<h3 id=changed-1>Changed</h3>
 <ul>
 <li>Initial card content and user input/output data used for &ldquo;ReaderClientSide&rdquo; mode are now serialized/de-serialized
 as JSON objects, and no more as strings containing JSON objects.</li>
@@ -578,12 +381,15 @@ as JSON objects, and no more as strings containing JSON objects.</li>
 </ul>
 </tr>
 <tr>
-<td>2023-04-04</td>
 <td>
-Keyple Distributed Remote Java Lib&nbsp;&nbsp;2.2.0<br>
+2023-04-04
+</td>
+<td>
+Keyple Distributed Remote Java Lib<span class=version><code>2.2.0</code></span>
+<hr>
 <p>⚠️ <strong>CAUTION</strong>: this version requires to use at least version <code>2.2.0</code> of the
 <a href=https://keyple.org/components-java/distributed/keyple-distributed-local-java-lib/ target=_blank rel=noopener>Keyple Distributed Local Library</a>!</p>
-<h3 id=changed-3>Changed</h3>
+<h3 id=changed-2>Changed</h3>
 <ul>
 <li>Initial card content and user input/output data used for &ldquo;ReaderClientSide&rdquo; mode are now serialized/de-serialized
 as JSON objects, and no more as strings containing JSON objects.</li>
@@ -597,10 +403,13 @@ as JSON objects, and no more as strings containing JSON objects.</li>
 </ul>
 </tr>
 <tr>
-<td>2023-04-04</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.4<br>
-<h3 id=changed-4>Changed</h3>
+2023-04-04
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.3.4</code></span>
+<hr>
+<h3 id=changed-3>Changed</h3>
 <ul>
 <li>Prevent internal fields serialization.</li>
 </ul>
@@ -613,10 +422,13 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.4<br>
 </ul>
 </tr>
 <tr>
-<td>2023-04-04</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.1.4<br>
-<h3 id=changed-5>Changed</h3>
+2023-04-04
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.1.4</code></span>
+<hr>
+<h3 id=changed-4>Changed</h3>
 <ul>
 <li>
 <p>Objects transmitted through the network for &ldquo;Distributed&rdquo; solution are now serialized/de-serialized
@@ -629,15 +441,18 @@ as JSON objects, and no more as strings containing JSON objects.</p>
 </ul>
 </tr>
 <tr>
-<td>2023-04-04</td>
 <td>
-Keyple Distributed Network Java Lib&nbsp;&nbsp;2.2.0<br>
+2023-04-04
+</td>
+<td>
+Keyple Distributed Network Java Lib<span class=version><code>2.2.0</code></span>
+<hr>
 <h3 id=added-4>Added</h3>
 <ul>
 <li><code>CHANGELOG.md</code> file (issue [eclipse/keyple#6]).</li>
 <li>CI: Forbid the publication of a version already released (issue [#6])</li>
 </ul>
-<h3 id=changed-6>Changed</h3>
+<h3 id=changed-5>Changed</h3>
 <ul>
 <li>All JSON property names are now &ldquo;lowerCamelCase&rdquo; formatted.</li>
 </ul>
@@ -653,10 +468,13 @@ Keyple Distributed Network Java Lib&nbsp;&nbsp;2.2.0<br>
 </ul>
 </tr>
 <tr>
-<td>2023-03-08</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.3<br>
-<h3 id=fixed-7>Fixed</h3>
+2023-03-08
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.3.3</code></span>
+<hr>
+<h3 id=fixed-5>Fixed</h3>
 <ul>
 <li>SV reload and debit logs are now updated in <code>CalypsoCard</code> during a transaction.</li>
 </ul>
@@ -669,9 +487,12 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.3<br>
 </ul>
 </tr>
 <tr>
-<td>2023-02-27</td>
 <td>
-Keyple Card Calypso Crypto Legacysam Java Lib&nbsp;&nbsp;0.3.0<br>
+2023-02-27
+</td>
+<td>
+Keyple Card Calypso Crypto Legacysam Java Lib<span class=version><code>0.3.0</code></span>
+<hr>
 <h3 id=upgraded-9>Upgraded</h3>
 <ul>
 <li>
@@ -687,9 +508,12 @@ Keyple Card Calypso Crypto Legacysam Java Lib&nbsp;&nbsp;0.3.0<br>
 </ul>
 </tr>
 <tr>
-<td>2023-02-17</td>
 <td>
-Keyple Distributed Remote Java Lib&nbsp;&nbsp;2.1.0<br>
+2023-02-17
+</td>
+<td>
+Keyple Distributed Remote Java Lib<span class=version><code>2.1.0</code></span>
+<hr>
 <h3 id=added-5>Added</h3>
 <ul>
 <li>The possibility to provide to the <code>RemotePluginServer</code> a custom executor service to be used to asynchronously notify
@@ -713,10 +537,13 @@ remote reader connection events (see new method
 </ul>
 </tr>
 <tr>
-<td>2023-02-17</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.1.3<br>
-<h3 id=fixed-8>Fixed</h3>
+2023-02-17
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.1.3</code></span>
+<hr>
+<h3 id=fixed-6>Fixed</h3>
 <ul>
 <li>Management of the physical channel when chaining multiple selection scenarios.</li>
 </ul>
@@ -732,10 +559,13 @@ Keyple Service Java Lib&nbsp;&nbsp;2.1.3<br>
 </ul>
 </tr>
 <tr>
-<td>2023-02-17</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.2<br>
-<h3 id=changed-7>Changed</h3>
+2023-02-17
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.3.2</code></span>
+<hr>
+<h3 id=changed-6>Changed</h3>
 <ul>
 <li>The errors raised by the &ldquo;Read Record&rdquo; command executed during the card selection process are no longer blocking.</li>
 </ul>
@@ -754,9 +584,12 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.2<br>
 </ul>
 </tr>
 <tr>
-<td>2023-02-17</td>
 <td>
-Keyple Distributed Remote Java Api&nbsp;&nbsp;2.1.0<br>
+2023-02-17
+</td>
+<td>
+Keyple Distributed Remote Java Api<span class=version><code>2.1.0</code></span>
+<hr>
 <h3 id=added-6>Added</h3>
 <ul>
 <li>
@@ -773,37 +606,12 @@ notify remote reader connection events (see new method <code>ObservableRemotePlu
 </ul>
 </tr>
 <tr>
-<td>2023-02-13</td>
 <td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.2.2<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-02-03</td>
+2023-01-10
+</td>
 <td>
-Keyple Cpp Example&nbsp;&nbsp;2022-07-26<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-01-31</td>
-<td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.3.0.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-01-31</td>
-<td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.2.1.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2023-01-10</td>
-<td>
-Keyple Service Java Lib&nbsp;&nbsp;2.1.2<br>
+Keyple Service Java Lib<span class=version><code>2.1.2</code></span>
+<hr>
 <h3 id=upgraded-13>Upgraded</h3>
 <ul>
 <li>
@@ -816,94 +624,13 @@ Keyple Service Java Lib&nbsp;&nbsp;2.1.2<br>
 </ul>
 </tr>
 <tr>
-<td>2023-01-01</td>
 <td>
-Keyple Plugin Stub Cpp Lib&nbsp;&nbsp;2.1.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-31</td>
+2022-12-22
+</td>
 <td>
-Keyple Plugin Pcsc Cpp Lib&nbsp;&nbsp;2.1.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-31</td>
-<td>
-Keyple Cpp Example&nbsp;&nbsp;2022-05-30<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-30</td>
-<td>
-Keyple Card Generic Cpp Lib&nbsp;&nbsp;2.0.2.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-30</td>
-<td>
-Keyple Cpp Example&nbsp;&nbsp;2022-02-02<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-30</td>
-<td>
-Keyple Service Resource Cpp Lib&nbsp;&nbsp;2.0.2<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-29</td>
-<td>
-Keyple Service Cpp Lib&nbsp;&nbsp;2.1.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-29</td>
-<td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.2.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-28</td>
-<td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.2.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-28</td>
-<td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.3.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-28</td>
-<td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.2.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-28</td>
-<td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.1.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-12-22</td>
-<td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.1<br>
-<h3 id=fixed-9>Fixed</h3>
+Keyple Card Calypso Java Lib<span class=version><code>2.3.1</code></span>
+<hr>
+<h3 id=fixed-7>Fixed</h3>
 <ul>
 <li>SAM exception management for signature command.</li>
 <li>Increase/Decrease commands postponed data management for legacy cards.</li>
@@ -923,9 +650,12 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.1<br>
 </ul>
 </tr>
 <tr>
-<td>2022-12-13</td>
 <td>
-Keyple Card Calypso Crypto Legacysam Java Lib&nbsp;&nbsp;0.2.0<br>
+2022-12-13
+</td>
+<td>
+Keyple Card Calypso Crypto Legacysam Java Lib<span class=version><code>0.2.0</code></span>
+<hr>
 <h3 id=added-7>Added</h3>
 <ul>
 <li>
@@ -935,22 +665,28 @@ Keyple Card Calypso Crypto Legacysam Java Lib&nbsp;&nbsp;0.2.0<br>
 </ul>
 </tr>
 <tr>
-<td>2022-12-12</td>
 <td>
-Keyple Card Calypso Crypto Legacysam Java Lib&nbsp;&nbsp;0.1.0<br>
+2022-12-12
+</td>
+<td>
+Keyple Card Calypso Crypto Legacysam Java Lib<span class=version><code>0.1.0</code></span>
+<hr>
 <p>This is the initial release.</p>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2022-12-06</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.0<br>
+2022-12-06
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.3.0</code></span>
+<hr>
 <h3 id=added-8>Added</h3>
 <ul>
 <li><code>ContextSetting</code> setting to <code>CalypsoExtensionService</code> to manage the limitations of some not fully compliant terminals.</li>
 </ul>
-<h3 id=fixed-10>Fixed</h3>
+<h3 id=fixed-8>Fixed</h3>
 <ul>
 <li>
 <p>Maximum payload length management for card and SAM APDUs.</p>
@@ -962,10 +698,13 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.3.0<br>
 </ul>
 </tr>
 <tr>
-<td>2022-11-17</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.5<br>
-<h3 id=fixed-11>Fixed</h3>
+2022-11-17
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.2.5</code></span>
+<hr>
+<h3 id=fixed-9>Fixed</h3>
 <ul>
 <li>
 <p>Signature issue when doing SV operation in secure session.</p>
@@ -974,18 +713,21 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.5<br>
 </ul>
 </tr>
 <tr>
-<td>2022-11-17</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.4<br>
-<h3 id=fixed-12>Fixed</h3>
+2022-11-17
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.2.4</code></span>
+<hr>
+<h3 id=fixed-10>Fixed</h3>
 <ul>
 <li>Take card revision into account when parsing the FCP structure (issue [#83]).</li>
 <li>Generate multiple increase/decrease counter commands when the card does not support Increase/DecreaseMultiple
 commands (issue [#84]).</li>
 <li>Expected length issue in &ldquo;Read Binary&rdquo; card command.</li>
 <li>Set payload capacity to 235 for cards revision 3 having the following startup information pattern: <code>xx 3C xx xx xx 10 xx</code></li>
-<li>Set payload capacity to 128 for cards revision 1 TO_BE_REPLACED 2.</li>
-<li>Fix postponed data issue for increase/decrease counter commands for cards revision 1 TO_BE_REPLACED 2 having the following startup
+<li>Set payload capacity to 128 for cards revision 1 2.</li>
+<li>Fix postponed data issue for increase/decrease counter commands for cards revision 1 2 having the following startup
 information pattern:
 <ul>
 <li><code>06 xx 01 03 xx xx xx</code></li>
@@ -995,7 +737,7 @@ information pattern:
 </ul>
 </li>
 </ul>
-<h3 id=changed-8>Changed</h3>
+<h3 id=changed-7>Changed</h3>
 <ul>
 <li>Enable binary commands with <code>PRIME_REVISION_2</code> cards.</li>
 </ul>
@@ -1011,9 +753,12 @@ information pattern:
 </ul>
 </tr>
 <tr>
-<td>2022-11-17</td>
 <td>
-Keyple Util Java Lib&nbsp;&nbsp;2.3.0<br>
+2022-11-17
+</td>
+<td>
+Keyple Util Java Lib<span class=version><code>2.3.0</code></span>
+<hr>
 <h3 id=added-9>Added</h3>
 <ul>
 <li>
@@ -1032,27 +777,23 @@ Keyple Util Java Lib&nbsp;&nbsp;2.3.0<br>
 </ul>
 </tr>
 <tr>
-<td>2022-11-04</td>
 <td>
-Keyple Plugin Cpp Api&nbsp;&nbsp;2.0.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-10-27</td>
+2022-10-27
+</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.3<br>
+Keyple Card Calypso Java Lib<span class=version><code>2.2.3</code></span>
+<hr>
 <h3 id=added-10>Added</h3>
 <ul>
 <li>JSON serializers for the new import/export feature of the card selection manager.</li>
 </ul>
-<h3 id=changed-9>Changed</h3>
+<h3 id=changed-8>Changed</h3>
 <ul>
 <li>Merge of internal <code>setApduResponse</code> and <code>checkStatus</code> methods to <code>parseApduResponse</code> method.</li>
 <li>Improvement of the card command parsing process.</li>
 <li>Internal identification of the currently selected file.</li>
 </ul>
-<h3 id=fixed-13>Fixed</h3>
+<h3 id=fixed-11>Fixed</h3>
 <ul>
 <li>Management of &ldquo;Read Records&rdquo; card command for cards not supporting multiple record reads.</li>
 </ul>
@@ -1068,10 +809,13 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.3<br>
 </ul>
 </tr>
 <tr>
-<td>2022-10-26</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.1.1<br>
-<h3 id=fixed-14>Fixed</h3>
+2022-10-26
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.1.1</code></span>
+<hr>
+<h3 id=fixed-12>Fixed</h3>
 <ul>
 <li>Logging format for distributed service.</li>
 </ul>
@@ -1087,10 +831,13 @@ Keyple Service Java Lib&nbsp;&nbsp;2.1.1<br>
 </ul>
 </tr>
 <tr>
-<td>2022-10-04</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.2<br>
-<h3 id=changed-10>Changed</h3>
+2022-10-04
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.2.2</code></span>
+<hr>
+<h3 id=changed-9>Changed</h3>
 <ul>
 <li>Use the SAM &ldquo;Digest Update Multiple&rdquo; command whenever possible.</li>
 </ul>
@@ -1103,9 +850,12 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.2<br>
 </ul>
 </tr>
 <tr>
-<td>2022-10-03</td>
 <td>
-Keyple Util Java Lib&nbsp;&nbsp;2.2.0<br>
+2022-10-03
+</td>
+<td>
+Keyple Util Java Lib<span class=version><code>2.2.0</code></span>
+<hr>
 <h3 id=added-11>Added</h3>
 <ul>
 <li>
@@ -1118,10 +868,13 @@ Keyple Util Java Lib&nbsp;&nbsp;2.2.0<br>
 </ul>
 </tr>
 <tr>
-<td>2022-07-25</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.1<br>
-<h3 id=fixed-15>Fixed</h3>
+2022-07-25
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.2.1</code></span>
+<hr>
+<h3 id=fixed-13>Fixed</h3>
 <ul>
 <li>Problem occurring when reusing a <code>CalypsoSamSelection</code> containing unlocking data.</li>
 </ul>
@@ -1134,10 +887,13 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.1<br>
 </ul>
 </tr>
 <tr>
-<td>2022-07-25</td>
 <td>
-Keyple Service Resource Java Lib&nbsp;&nbsp;2.0.2<br>
-<h3 id=changed-11>Changed</h3>
+2022-07-25
+</td>
+<td>
+Keyple Service Resource Java Lib<span class=version><code>2.0.2</code></span>
+<hr>
+<h3 id=changed-10>Changed</h3>
 <ul>
 <li>Usage of <code>CardReader</code> instead of <code>Reader</code>.</li>
 </ul>
@@ -1153,9 +909,12 @@ Keyple Service Resource Java Lib&nbsp;&nbsp;2.0.2<br>
 </ul>
 </tr>
 <tr>
-<td>2022-07-25</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.1.0<br>
+2022-07-25
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.1.0</code></span>
+<hr>
 <h3 id=added-12>Added</h3>
 <ul>
 <li><code>SmartCardService.getPlugin</code> from a <code>CardReader</code> reference.</li>
@@ -1169,7 +928,7 @@ Keyple Service Java Lib&nbsp;&nbsp;2.1.0<br>
 <li><code>ConfigurableReader</code> in favor of <code>ConfigurableCardReader</code> from the &ldquo;Calypsonet Terminal Reader API&rdquo;.</li>
 <li><code>ReaderEvent</code> in favor of <code>CardReaderEvent</code> from the &ldquo;Calypsonet Terminal Reader API&rdquo;.</li>
 </ul>
-<h3 id=fixed-16>Fixed</h3>
+<h3 id=fixed-14>Fixed</h3>
 <ul>
 <li>Auto management of 61XX and 6CXX status words and case 4 commands (Calypsonet Terminal Requirements: <code>RL-SW-61XX.1</code>, <code>RL-SW-6CXX.1</code>, <code>RL-SW-ANALYSIS.1</code> and <code>RL-SW-CASE4.1</code>) (issue [#37]).</li>
 <li>Returned value of <code>getActiveSmartCard</code> method when there is no active smart card (issue [#40]).</li>
@@ -1186,93 +945,42 @@ Keyple Service Java Lib&nbsp;&nbsp;2.1.0<br>
 </ul>
 </tr>
 <tr>
-<td>2022-07-25</td>
 <td>
-Keyple Plugin Pcsc Java Lib&nbsp;&nbsp;2.1.0<br>
+2022-06-09
+</td>
+<td>
+Keyple Plugin Android Omapi Java Lib<span class=version><code>2.0.1</code></span>
+<hr>
 <h3 id=added-13>Added</h3>
 <ul>
-<li><code>PcscReader.transmitControlCommand</code> and <code>PcscReader.getIoctlCcidEscapeCommandId</code> methods (issue [#9]).</li>
-<li>&ldquo;CHANGELOG.md&rdquo; file (issue [eclipse/keyple#6]).</li>
-<li>CI: Forbid the publication of a version already released (issue [#6]).</li>
+<li><code>CHANGELOG.md</code> file (issue [eclipse/keyple#6]).</li>
+<li>CI: Forbid the publication of a version already released (issue [#3]).</li>
+</ul>
+<h3 id=fixed-15>Fixed</h3>
+<ul>
+<li>Removal of the unused Jacoco plugin for compiling Android applications that had an unwanted side effect when the application was launched (stacktrace with warnings).</li>
 </ul>
 <h3 id=upgraded-22>Upgraded</h3>
 <ul>
-<li>&ldquo;Keyple Util Library&rdquo; to version <code>2.1.0</code> by removing the use of deprecated methods.</li>
-</ul>
-<h3 id=fixed-17>Fixed</h3>
-<ul>
 <li>
-<p>Setting the smartcard.io path in the case of MacOS platform.</p>
+<p>&ldquo;Keyple Util Library&rdquo; to version <code>2.1.0</code> by removing the use of deprecated methods.</p>
 </td>
 </li>
 </ul>
 </tr>
 <tr>
-<td>2022-07-05</td>
 <td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.0.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-07-05</td>
+2022-06-09
+</td>
 <td>
-Keyple Service Resource Cpp Lib&nbsp;&nbsp;2.0.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-07-05</td>
-<td>
-Keyple Service Cpp Lib&nbsp;&nbsp;2.0.1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-07-05</td>
-<td>
-Keyple Plugin Stub Cpp Lib&nbsp;&nbsp;2.0.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-07-05</td>
-<td>
-Keyple Plugin Pcsc Cpp Lib&nbsp;&nbsp;2.0.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-07-05</td>
-<td>
-Keyple Common Cpp Api&nbsp;&nbsp;2.0.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-07-05</td>
-<td>
-Keyple Card Generic Cpp Lib&nbsp;&nbsp;2.0.2<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-07-05</td>
-<td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.1.0<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-06-09</td>
-<td>
-Keyple Plugin Android Omapi Java Lib&nbsp;&nbsp;2.0.1<br>
+Keyple Plugin Android Nfc Java Lib<span class=version><code>2.0.1</code></span>
+<hr>
 <h3 id=added-14>Added</h3>
 <ul>
 <li><code>CHANGELOG.md</code> file (issue [eclipse/keyple#6]).</li>
-<li>CI: Forbid the publication of a version already released (issue [#3]).</li>
+<li>CI: Forbid the publication of a version already released (issue [#5]).</li>
 </ul>
-<h3 id=fixed-18>Fixed</h3>
+<h3 id=fixed-16>Fixed</h3>
 <ul>
 <li>Removal of the unused Jacoco plugin for compiling Android applications that had an unwanted side effect when the application was launched (stacktrace with warnings).</li>
 </ul>
@@ -1285,17 +993,17 @@ Keyple Plugin Android Omapi Java Lib&nbsp;&nbsp;2.0.1<br>
 </ul>
 </tr>
 <tr>
-<td>2022-06-09</td>
 <td>
-Keyple Plugin Android Nfc Java Lib&nbsp;&nbsp;2.0.1<br>
+2022-06-03
+</td>
+<td>
+Keyple Plugin Stub Java Lib<span class=version><code>2.1.0</code></span>
+<hr>
 <h3 id=added-15>Added</h3>
 <ul>
-<li><code>CHANGELOG.md</code> file (issue [eclipse/keyple#6]).</li>
-<li>CI: Forbid the publication of a version already released (issue [#5]).</li>
-</ul>
-<h3 id=fixed-19>Fixed</h3>
-<ul>
-<li>Removal of the unused Jacoco plugin for compiling Android applications that had an unwanted side effect when the application was launched (stacktrace with warnings).</li>
+<li>&ldquo;CHANGELOG.md&rdquo; file (issue [eclipse/keyple#6]).</li>
+<li>CI: Forbid the publication of a version already released (issue [#7]).</li>
+<li>New way of mocking APDU responses for a <code>StubSmartCard</code> using a provider (issue [#10]).</li>
 </ul>
 <h3 id=upgraded-24>Upgraded</h3>
 <ul>
@@ -1306,28 +1014,13 @@ Keyple Plugin Android Nfc Java Lib&nbsp;&nbsp;2.0.1<br>
 </ul>
 </tr>
 <tr>
-<td>2022-06-03</td>
 <td>
-Keyple Plugin Stub Java Lib&nbsp;&nbsp;2.1.0<br>
-<h3 id=added-16>Added</h3>
-<ul>
-<li>&ldquo;CHANGELOG.md&rdquo; file (issue [eclipse/keyple#6]).</li>
-<li>CI: Forbid the publication of a version already released (issue [#7]).</li>
-<li>New way of mocking APDU responses for a <code>StubSmartCard</code> using a provider (issue [#10]).</li>
-</ul>
-<h3 id=upgraded-25>Upgraded</h3>
-<ul>
-<li>
-<p>&ldquo;Keyple Util Library&rdquo; to version <code>2.1.0</code> by removing the use of deprecated methods.</p>
+2022-05-30
 </td>
-</li>
-</ul>
-</tr>
-<tr>
-<td>2022-05-30</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.0<br>
-<h3 id=added-17>Added</h3>
+Keyple Card Calypso Java Lib<span class=version><code>2.2.0</code></span>
+<hr>
+<h3 id=added-16>Added</h3>
 <ul>
 <li><code>CalypsoExtensionService.createBasicSignatureComputationData</code> method.</li>
 <li><code>CalypsoExtensionService.createTraceableSignatureComputationData</code> method.</li>
@@ -1343,12 +1036,12 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.0<br>
 <li>Additional Calypso requirement related to the card transaction counter (issue [#66]).</li>
 <li>Additional Calypso requirement related to the transaction audit data (issue [#68]).</li>
 </ul>
-<h3 id=upgraded-26>Upgraded</h3>
+<h3 id=upgraded-25>Upgraded</h3>
 <ul>
 <li>&ldquo;Calypsonet Terminal Calypso API&rdquo; to version <code>1.2.0</code> (issue [#66]).</li>
 <li>&ldquo;Keyple Util Library&rdquo; to version <code>2.1.0</code>.</li>
 </ul>
-<h3 id=fixed-20>Fixed</h3>
+<h3 id=fixed-17>Fixed</h3>
 <ul>
 <li>
 <p>Null Pointer Exception raised when the &ldquo;open secure session&rdquo; command returns an unexpected status word [#70]</p>
@@ -1360,10 +1053,13 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.2.0<br>
 </ul>
 </tr>
 <tr>
-<td>2022-05-30</td>
 <td>
-Keyple Util Java Lib&nbsp;&nbsp;2.1.0<br>
-<h3 id=added-18>Added</h3>
+2022-05-30
+</td>
+<td>
+Keyple Util Java Lib<span class=version><code>2.1.0</code></span>
+<hr>
+<h3 id=added-17>Added</h3>
 <ul>
 <li>&ldquo;CHANGELOG.md&rdquo; file (issue [eclipse/keyple#6]).</li>
 <li>CI: Forbid the publication of a version already released (issue [#14]).</li>
@@ -1380,7 +1076,7 @@ Keyple Util Java Lib&nbsp;&nbsp;2.1.0<br>
 <li><code>ByteArrayUtil.extractInt</code> method.</li>
 <li><code>BerTlvUtil.parse</code> method to parse TLV data structure having several identical TAGs (issue [#19]).</li>
 </ul>
-<h3 id=changed-12>Changed</h3>
+<h3 id=changed-11>Changed</h3>
 <ul>
 <li>Optimizations of hexadecimal data conversions.</li>
 </ul>
@@ -1423,87 +1119,13 @@ Keyple Util Java Lib&nbsp;&nbsp;2.1.0<br>
 </ul>
 </tr>
 <tr>
-<td>2022-05-25</td>
 <td>
-Keyple Cpp Meta&nbsp;&nbsp;2.0.0-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-25</td>
+2022-02-01
+</td>
 <td>
-Keyple Service Resource Cpp Lib&nbsp;&nbsp;2.0.1-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-25</td>
-<td>
-Keyple Common Cpp Api&nbsp;&nbsp;2.0.0-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-24</td>
-<td>
-Keyple Cpp Example&nbsp;&nbsp;2.0.0-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-24</td>
-<td>
-Keyple Util Cpp Lib&nbsp;&nbsp;2.0.0-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-24</td>
-<td>
-Keyple Service Cpp Lib&nbsp;&nbsp;2.0.1-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-24</td>
-<td>
-Keyple Plugin Stub Cpp Lib&nbsp;&nbsp;2.0.0-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-24</td>
-<td>
-Keyple Plugin Pcsc Cpp Lib&nbsp;&nbsp;2.0.0-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-24</td>
-<td>
-Keyple Plugin Cpp Api&nbsp;&nbsp;2.0.0-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-24</td>
-<td>
-Keyple Card Generic Cpp Lib&nbsp;&nbsp;2.0.2-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-05-24</td>
-<td>
-Keyple Card Calypso Cpp Lib&nbsp;&nbsp;2.1.0-ipr<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2022-02-01</td>
-<td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.1.0<br>
-<h3 id=added-19>Added</h3>
+Keyple Card Calypso Java Lib<span class=version><code>2.1.0</code></span>
+<hr>
+<h3 id=added-18>Added</h3>
 <ul>
 <li>Implementation of <code>EF_LIST</code> and <code>TRACEABILITY_INFORMATION</code> tags to <code>prepareGetData</code> methods (issue [#33]).</li>
 <li>Implementation of <code>prepareUpdateBinary</code> and <code>prepareWriteBinary</code> methods (issue [#34]).</li>
@@ -1514,15 +1136,15 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.1.0<br>
 <li>Implementation of <code>processChangeKey</code> method (issue [#39]).</li>
 <li>Management of EFs with SFI equal to 0 (issue [#55]).</li>
 </ul>
-<h3 id=changed-13>Changed</h3>
+<h3 id=changed-12>Changed</h3>
 <ul>
 <li>Internal parameter P2 to FFh for the &ldquo;Change PIN&rdquo; card APDU command.</li>
 </ul>
-<h3 id=fixed-21>Fixed</h3>
+<h3 id=fixed-18>Fixed</h3>
 <ul>
 <li>Revision 2 case for <code>prepareSelectFile</code> method (issue [#32]).</li>
 </ul>
-<h3 id=upgraded-27>Upgraded</h3>
+<h3 id=upgraded-26>Upgraded</h3>
 <ul>
 <li>
 <p>&ldquo;Calypsonet Terminal Calypso API&rdquo; to version <code>1.1.0</code> (issue [#53]).</p>
@@ -1531,14 +1153,17 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.1.0<br>
 </ul>
 </tr>
 <tr>
-<td>2021-12-17</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.3<br>
-<h3 id=fixed-22>Fixed</h3>
+2021-12-17
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.0.3</code></span>
+<hr>
+<h3 id=fixed-19>Fixed</h3>
 <ul>
 <li>Commands anticipation management during &ldquo;processClosing&rdquo; method (issue [#30])</li>
 </ul>
-<h3 id=upgraded-28>Upgraded</h3>
+<h3 id=upgraded-27>Upgraded</h3>
 <ul>
 <li>
 <p>&ldquo;Calypsonet Terminal Calypso API&rdquo; to version <code>1.0.5</code>.</p>
@@ -1547,10 +1172,13 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.3<br>
 </ul>
 </tr>
 <tr>
-<td>2021-12-17</td>
 <td>
-Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.2<br>
-<h3 id=fixed-23>Fixed</h3>
+2021-12-17
+</td>
+<td>
+Keyple Card Generic Java Lib<span class=version><code>2.0.2</code></span>
+<hr>
+<h3 id=fixed-20>Fixed</h3>
 <ul>
 <li>
 <p>Logging of APDU request command (issue [#9]).</p>
@@ -1559,10 +1187,13 @@ Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.2<br>
 </ul>
 </tr>
 <tr>
-<td>2021-12-16</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.2<br>
-<h3 id=upgraded-29>Upgraded</h3>
+2021-12-16
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.0.2</code></span>
+<hr>
+<h3 id=upgraded-28>Upgraded</h3>
 <ul>
 <li>
 <p>&ldquo;Calypsonet Terminal Calypso API&rdquo; to version <code>1.0.3</code> (issue [#28]).</p>
@@ -1571,15 +1202,18 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.2<br>
 </ul>
 </tr>
 <tr>
-<td>2021-12-08</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.0.1<br>
-<h3 id=added-20>Added</h3>
+2021-12-08
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.0.1</code></span>
+<hr>
+<h3 id=added-19>Added</h3>
 <ul>
 <li><code>CHANGELOG.md</code> file (issue [eclipse/keyple#6]).</li>
 <li>CI: Forbid the publication of a version already released (issue [#34]).</li>
 </ul>
-<h3 id=fixed-24>Fixed</h3>
+<h3 id=fixed-21>Fixed</h3>
 <ul>
 <li>
 <p>Logical channel management for multiple selections (issue [#38]).</p>
@@ -1588,19 +1222,22 @@ Keyple Service Java Lib&nbsp;&nbsp;2.0.1<br>
 </ul>
 </tr>
 <tr>
-<td>2021-11-22</td>
 <td>
-Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.1<br>
-<h3 id=added-21>Added</h3>
+2021-11-22
+</td>
+<td>
+Keyple Card Generic Java Lib<span class=version><code>2.0.1</code></span>
+<hr>
+<h3 id=added-20>Added</h3>
 <ul>
 <li>&ldquo;CHANGELOG.md&rdquo; file (issue [eclipse/keyple#6]).</li>
 <li>CI: Forbid the publication of a version already released (issue [#4]).</li>
 </ul>
-<h3 id=fixed-25>Fixed</h3>
+<h3 id=fixed-22>Fixed</h3>
 <ul>
 <li>Returned value of <code>addSuccessfulStatusWord</code> method (issue [#7]).</li>
 </ul>
-<h3 id=upgraded-30>Upgraded</h3>
+<h3 id=upgraded-29>Upgraded</h3>
 <ul>
 <li>
 <p>&ldquo;Keyple Service Resource Library&rdquo; to version <code>2.0.1</code></p>
@@ -1609,23 +1246,26 @@ Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.1<br>
 </ul>
 </tr>
 <tr>
-<td>2021-11-22</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.1<br>
-<h3 id=added-22>Added</h3>
+2021-11-22
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.0.1</code></span>
+<hr>
+<h3 id=added-21>Added</h3>
 <ul>
 <li><code>CHANGELOG.md</code> file (issue [eclipse/keyple#6]).</li>
 <li>CI: Forbid the publication of a version already released (issue [#20]).</li>
 </ul>
-<h3 id=changed-14>Changed</h3>
+<h3 id=changed-13>Changed</h3>
 <ul>
 <li>Merging of internal builders and parsers of APDU commands (issue [#24]).</li>
 </ul>
-<h3 id=fixed-26>Fixed</h3>
+<h3 id=fixed-23>Fixed</h3>
 <ul>
 <li>Take into account the last DF status for <code>isDfInvalidated()</code> method (issue [#22]).</li>
 </ul>
-<h3 id=upgraded-31>Upgraded</h3>
+<h3 id=upgraded-30>Upgraded</h3>
 <ul>
 <li>&ldquo;Calypsonet Terminal Calypso API&rdquo; to version <code>1.0.2</code></li>
 <li>&ldquo;Keyple Service Resource Library&rdquo; to version <code>2.0.1</code></li>
@@ -1639,19 +1279,22 @@ Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.1<br>
 </ul>
 </tr>
 <tr>
-<td>2021-11-22</td>
 <td>
-Keyple Service Resource Java Lib&nbsp;&nbsp;2.0.1<br>
-<h3 id=added-23>Added</h3>
+2021-11-22
+</td>
+<td>
+Keyple Service Resource Java Lib<span class=version><code>2.0.1</code></span>
+<hr>
+<h3 id=added-22>Added</h3>
 <ul>
 <li>&ldquo;CHANGELOG.md&rdquo; file (issue [eclipse/keyple#6]).</li>
 <li>CI: Forbid the publication of a version already released (issue [#4]).</li>
 </ul>
-<h3 id=changed-15>Changed</h3>
+<h3 id=changed-14>Changed</h3>
 <ul>
 <li>Useless check removed in configurator builder (issue [#9])</li>
 </ul>
-<h3 id=fixed-27>Fixed</h3>
+<h3 id=fixed-24>Fixed</h3>
 <ul>
 <li>
 <p>Sonar issues (issue [#6]).</p>
@@ -1660,9 +1303,12 @@ Keyple Service Resource Java Lib&nbsp;&nbsp;2.0.1<br>
 </ul>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Card Generic Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Card Generic Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1670,9 +1316,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Card Calypso Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1680,9 +1329,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Distributed Remote Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Distributed Remote Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Distributed Remote Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1690,9 +1342,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Distributed Local Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Distributed Local Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Distributed Local Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1700,9 +1355,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Service Resource Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Service Resource Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Service Resource Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1710,9 +1368,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Plugin Android Omapi Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Plugin Android Omapi Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Plugin Android OMAPI Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1720,9 +1381,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Distributed Network Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Distributed Network Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Distributed Network Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1730,9 +1394,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Plugin Android Nfc Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Plugin Android Nfc Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Plugin Android NFC Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1740,9 +1407,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Plugin Stub Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Plugin Stub Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Plugin Stub Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1750,19 +1420,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Plugin Pcsc Java Lib&nbsp;&nbsp;2.0.0<br>
-<p>This is the initial release of the <strong>Keyple Plugin PC/SC Java Library</strong>.
-It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
-It also brings many major API changes.</p>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2021-10-06</td>
+2021-10-06
+</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.0.0<br>
+Keyple Service Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Service Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1770,9 +1433,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Distributed Local Java Api&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Distributed Local Java Api<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Distributed Local Java API</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1780,9 +1446,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Distributed Remote Java Api&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Distributed Remote Java Api<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Distributed Remote Java API</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1790,9 +1459,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Plugin Java Api&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Plugin Java Api<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Plugin Java API</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1800,9 +1472,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Util Java Lib&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Util Java Lib<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Util Java Library</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1810,9 +1485,12 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-10-06</td>
 <td>
-Keyple Common Java Api&nbsp;&nbsp;2.0.0<br>
+2021-10-06
+</td>
+<td>
+Keyple Common Java Api<span class=version><code>2.0.0</code></span>
+<hr>
 <p>This is the initial release of the <strong>Keyple Common Java API</strong>.
 It follows the extraction of Keyple 1.0 components contained in the <code>eclipse/keyple-java</code> repository to dedicated repositories.
 It also brings many major API changes.</p>
@@ -1820,436 +1498,582 @@ It also brings many major API changes.</p>
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-27</td>
 <td>
-Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-27
+</td>
+<td>
+Keyple Card Generic Java Lib<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-27</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-27
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-27</td>
 <td>
-Keyple Distributed Remote Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-27
+</td>
+<td>
+Keyple Distributed Remote Java Lib<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-27</td>
 <td>
-Keyple Distributed Local Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-27
+</td>
+<td>
+Keyple Distributed Local Java Lib<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-27</td>
 <td>
-Keyple Service Resource Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-08-27
+</td>
+<td>
+Keyple Service Resource Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Plugin Android Omapi Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-08-26
+</td>
+<td>
+Keyple Plugin Android Omapi Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Plugin Android Nfc Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-08-26
+</td>
+<td>
+Keyple Plugin Android Nfc Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.0.0-rc5<br>
+2021-08-26
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.0.0-rc5</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Plugin Stub Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-26
+</td>
+<td>
+Keyple Plugin Stub Java Lib<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Distributed Network Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-26
+</td>
+<td>
+Keyple Distributed Network Java Lib<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Plugin Pcsc Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-26
+</td>
+<td>
+Keyple Distributed Remote Java Api<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Distributed Remote Java Api&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-26
+</td>
+<td>
+Keyple Plugin Java Api<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Plugin Java Api&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-26
+</td>
+<td>
+Keyple Common Java Api<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Common Java Api&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-26
+</td>
+<td>
+Keyple Distributed Local Java Api<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Distributed Local Java Api&nbsp;&nbsp;2.0.0-rc4<br>
+2021-08-26
+</td>
+<td>
+Keyple Util Java Lib<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-08-26</td>
 <td>
-Keyple Util Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-07-09
+</td>
+<td>
+Keyple Card Generic Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Service Resource Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Service Resource Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-07-09
+</td>
+<td>
+Keyple Distributed Remote Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Distributed Remote Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Distributed Local Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Distributed Local Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Distributed Network Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Distributed Network Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Plugin Stub Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Plugin Stub Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Plugin Android Omapi Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Plugin Pcsc Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Plugin Android Nfc Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Plugin Android Omapi Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-07-09
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.0.0-rc4</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Plugin Android Nfc Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-07-09
+</td>
+<td>
+Keyple Common Java Api<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.0.0-rc4<br>
+2021-07-09
+</td>
+<td>
+Keyple Distributed Remote Java Api<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Common Java Api&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Distributed Local Java Api<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Distributed Remote Java Api&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Plugin Java Api<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Distributed Local Java Api&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-09
+</td>
+<td>
+Keyple Util Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Plugin Java Api&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-02
+</td>
+<td>
+Keyple Plugin Android Omapi Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-09</td>
 <td>
-Keyple Util Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-07-02
+</td>
+<td>
+Keyple Plugin Android Nfc Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-02</td>
 <td>
-Keyple Plugin Android Omapi Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-07-02
+</td>
+<td>
+Keyple Distributed Local Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-02</td>
 <td>
-Keyple Plugin Android Nfc Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-07-02
+</td>
+<td>
+Keyple Distributed Remote Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-02</td>
 <td>
-Keyple Distributed Local Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-07-02
+</td>
+<td>
+Keyple Distributed Network Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-02</td>
 <td>
-Keyple Distributed Remote Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-07-02
+</td>
+<td>
+Keyple Util Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-02</td>
 <td>
-Keyple Distributed Network Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-06-28
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.0.0-rc3</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-07-02</td>
 <td>
-Keyple Util Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-06-28
+</td>
+<td>
+Keyple Card Generic Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.0.0-rc3<br>
+2021-06-28
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-06-28
+</td>
+<td>
+Keyple Plugin Stub Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-06-28
+</td>
+<td>
+Keyple Distributed Remote Java Api<span class=version><code>2.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Plugin Pcsc Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-06-28
+</td>
+<td>
+Keyple Distributed Local Java Api<span class=version><code>2.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Plugin Stub Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-06-28
+</td>
+<td>
+Keyple Plugin Java Api<span class=version><code>2.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Distributed Remote Java Api&nbsp;&nbsp;2.0-rc2<br>
+2021-06-28
+</td>
+<td>
+Keyple Common Java Api<span class=version><code>2.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Distributed Local Java Api&nbsp;&nbsp;2.0-rc2<br>
+2021-06-23
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.0.0-rc2</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Plugin Java Api&nbsp;&nbsp;2.0-rc2<br>
+2021-06-21
+</td>
+<td>
+Keyple Distributed Network Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-28</td>
 <td>
-Keyple Common Java Api&nbsp;&nbsp;2.0-rc2<br>
+2021-06-21
+</td>
+<td>
+Keyple Plugin Stub Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-23</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.0.0-rc2<br>
+2021-06-21
+</td>
+<td>
+Keyple Service Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Distributed Network Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Distributed Remote Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Plugin Pcsc Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Distributed Local Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Plugin Stub Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Service Resource Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Service Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Card Calypso Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Distributed Remote Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Card Generic Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Distributed Local Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Util Java Lib<span class=version><code>2.0.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Service Resource Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Distributed Remote Java Api<span class=version><code>2.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Card Calypso Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Plugin Java Api<span class=version><code>2.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Card Generic Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
+2021-06-21
+</td>
+<td>
+Keyple Distributed Local Java Api<span class=version><code>2.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>
 <tr>
-<td>2021-06-21</td>
 <td>
-Keyple Util Java Lib&nbsp;&nbsp;2.0.0-rc1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2021-06-21</td>
+2021-06-21
+</td>
 <td>
-Keyple Distributed Remote Java Api&nbsp;&nbsp;2.0-rc1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2021-06-21</td>
-<td>
-Keyple Plugin Java Api&nbsp;&nbsp;2.0-rc1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2021-06-21</td>
-<td>
-Keyple Distributed Local Java Api&nbsp;&nbsp;2.0-rc1<br>
-<pre><code>&lt;/td&gt;
-</code></pre>
-</tr>
-<tr>
-<td>2021-06-21</td>
-<td>
-Keyple Common Java Api&nbsp;&nbsp;2.0-rc1<br>
+Keyple Common Java Api<span class=version><code>2.0-rc1</code></span>
+<hr>
 <pre><code>&lt;/td&gt;
 </code></pre>
 </tr>

@@ -1,5 +1,13 @@
 [
   {
+    "name": "develop",
+    "commit": {
+      "sha": "d5497dc7ec2de6bec9c002f44c74915df57dea7d",
+      "url": "https://api.github.com/repos/eclipse/keyple-website/commits/d5497dc7ec2de6bec9c002f44c74915df57dea7d"
+    },
+    "protected": false
+  },
+  {
     "name": "gh-pages",
     "commit": {
       "sha": "c5af0d4865dea42e63dd41c8401f852d1de026f1",
