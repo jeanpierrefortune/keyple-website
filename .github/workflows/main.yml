@@ -20,6 +20,14 @@ jobs:
           hugo-version: '0.87.0'
           extended: true
 
+      - name: Set up jq
+        uses: sergeysova/jq-action@v2
+
+      - name: Create project changelog
+        working-directory: .
+        run: ./.github/scripts/generate_changelog_page.sh
+        continue-on-error: true
+
       - name: Build
         run: hugo --minify
         working-directory: ./

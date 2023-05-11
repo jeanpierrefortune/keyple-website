@@ -14,6 +14,7 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# shellcheck disable=SC2164
 cd $repository_name
 
 echo "Checkout gh-pages branch..."
